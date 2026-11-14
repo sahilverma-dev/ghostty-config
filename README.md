@@ -1,6 +1,16 @@
 # Ghostty config
 
-My terminal configuration for [Ghostty](https://ghostty.org), on macOS.
+My personal [Ghostty](https://ghostty.org) terminal configuration — macOS.
+Adapted from a clone of [Thorsten Rhau](https://github.com/ThorstenRhau)'s
+config, then changed to suit me. See [Credits](#credits).
+
+**Clone it:**
+
+```sh
+git clone https://github.com/sahilverma-dev/ghostty-config.git ~/.config/ghostty
+```
+
+Repo: https://github.com/sahilverma-dev/ghostty-config
 
 ## Theme follows the system appearance
 
@@ -71,13 +81,29 @@ local tweaks; the rest are as shipped.
 
 ## Credits
 
-This repo started life as a clone of [Thorsten Rhau's Ghostty
-config](https://github.com/ThorstenRhau/ghostty), which is no longer public. Nine
-of the ten files in `themes/` come from there, and the `LICENSE` is his:
+**Thorsten Rhau** — https://github.com/ThorstenRhau — wrote the original config
+this repo grew out of. Full credit to him for the starting point.
 
-> BSD 3-Clause License, Copyright (c) 2024, Thorsten Rhau
+| | |
+| --- | --- |
+| Original repo | `https://github.com/ThorstenRhau/ghostty` (now returns 404) |
+| Copyright | (c) 2024, Thorsten Rhau |
+| License | BSD 3-Clause — see [LICENSE](LICENSE) |
+| Still his work | `LICENSE`, plus 9 of the 10 files in `themes/`: `kanagawa-dragon`, `kanagawa-lotus`, `kanagawa-wave`, `melange_dark`, `melange_light`, `tokyonight_day`, `tokyonight_moon`, `tokyonight_night`, `tokyonight_storm` |
 
-The BSD 3-Clause license requires that notice to be retained when the files are
-redistributed, so `LICENSE` stays even though `config` has since been rewritten
-from scratch. The theme files themselves are community ports — Tokyo Night,
-Kanagawa, Melange and Catppuccin are other people's palettes.
+BSD 3-Clause requires the copyright notice to be retained when those files are
+redistributed, so `LICENSE` stays even though `config` no longer resembles his.
+
+### What I changed
+
+The `config` here is mine, not his. It differs in most of the things he had set:
+
+- Theme: his Tokyo Night pair → Catppuccin Latte / Mocha, driven by the system
+  appearance instead of being fixed
+- Font: dropped his PragmataPro stack (paid font, not what I use) and his
+  `font-feature` flags; font size 15 → 14
+- Removed his split and tab keybindings, cursor and clipboard options
+- Added `mouse-scroll-multiplier` and my own palette, `themes/My colours`
+
+The theme files themselves are community ports. Tokyo Night, Kanagawa, Melange
+and Catppuccin are other people's palettes, credited upstream.
