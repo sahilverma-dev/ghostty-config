@@ -1,5 +1,9 @@
 # Ghostty config
 
+[![Ghostty 1.4.0](https://img.shields.io/badge/Ghostty-1.4.0-2b2b2b)](https://ghostty.org)
+[![Platform macOS](https://img.shields.io/badge/platform-macOS-lightgrey)](#)
+[![License BSD-3-Clause](https://img.shields.io/badge/license-BSD--3--Clause-blue)](LICENSE)
+
 My personal [Ghostty](https://ghostty.org) terminal configuration — macOS.
 Adapted from a clone of [Thorsten Rhau](https://github.com/ThorstenRhau)'s
 config, then changed to suit me. See [Credits](#credits).
@@ -69,10 +73,6 @@ on without digging through docs.
 | `font-size` | `14` | Plain default, no `font-family` set |
 | `mouse-scroll-multiplier` | `0.95` | Slows down trackpad scrolling |
 
-Two options in here are Linux-only and do nothing on macOS: `gtk-titlebar` and
-`async-backend`. They are leftovers from a config that was copied across
-platforms, left in place so the file stays identical on both machines.
-
 ## `themes/`
 
 Files here are looked up before Ghostty's built-in themes and shadow a built-in
@@ -104,6 +104,9 @@ The `config` here is mine, not his. It differs in most of the things he had set:
   `font-feature` flags; font size 15 → 14
 - Removed his split and tab keybindings, cursor and clipboard options
 - Added `mouse-scroll-multiplier` and my own palette, `themes/My colours`
+- Dropped the Linux-only options (`gtk-titlebar`, `async-backend`) and the
+  sample shader paths carried over from that copied config, so nothing in here
+  points at another machine
 
 The theme files themselves are community ports. Tokyo Night, Kanagawa, Melange
 and Catppuccin are other people's palettes, credited upstream.
