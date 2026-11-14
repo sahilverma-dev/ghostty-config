@@ -16,6 +16,13 @@ git clone https://github.com/sahilverma-dev/ghostty-config.git ~/.config/ghostty
 
 Repo: https://github.com/sahilverma-dev/ghostty-config
 
+<p align="center">
+  <img src="screenshots/light.png" width="49%" alt="Ghostty showing neofetch in Catppuccin Latte, macOS light mode">
+  <img src="screenshots/dark.png" width="49%" alt="Ghostty showing neofetch in Catppuccin Mocha, macOS dark mode">
+</p>
+
+<p align="center"><em>The same config, captured in macOS Light and Dark mode.</em></p>
+
 ## Theme follows the system appearance
 
 ```ini
